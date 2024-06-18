@@ -27,13 +27,13 @@ export default function News({category, showSearch}){
             setLoading(true);
             setError(null);
             try{
-                const response = await axios.get(`https://newsapi.org/v2/top-headlines`,{
+                const response = await axios.get(`https://gnews.io/api/v4/top-headlines`,{
                     params:{
                         category:category !== 'headlines' ? category :'',
                         q:debouncedSearchQuery,
-                        apiKey:import.meta.env.VITE_NEWS_API_KEY,
-                        language:"en",
-                        pageSize:100,
+                        apikey:import.meta.env.VITE_GNEWS_API_KEY,
+                        lang:"en",
+                        // pageSize:100,
                         page: page
                     }
                 })
