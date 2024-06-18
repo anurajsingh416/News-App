@@ -15,7 +15,7 @@ export default function News({category, showSearch}){
 
     useEffect(()=>{
         const handler = setTimeout(()=>{
-            // setDebouncedSearchQuery(searchQuery);
+            setDebouncedSearchQuery(searchQuery);
         },3000)
         return ()=>{
             clearTimeout(handler);
