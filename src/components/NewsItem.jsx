@@ -17,9 +17,7 @@ export default function NewsItem({name,author,title,description,url,urlToImage,c
                         >
                             <a href={url}>Read full article</a>
                         </p>
-                        <p className={`text-sm text-gray-500 hidden md:block lg:block `}>
-                            By {author}
-                        </p>
+                        
                     </div>
                     <div className="max-w-32 md:max-w-64 lg:max-w-64 float-right">
                         <img
