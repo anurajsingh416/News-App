@@ -92,11 +92,11 @@ export default function News({category, showSearch}){
                 <NewsItem 
                     key={index}
                     name={item.source.name}
-                    author={item.author}
+{/*                     author={item.author} */}
                     title={item.title}
                     description={item.description}
                     url={item.url}
-                    urlToImage={item.urlToImage}
+                    urlToImage={item.image}
                     content={item.content}
                 />)
             )
