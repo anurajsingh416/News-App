@@ -33,7 +33,6 @@ export default function News({category, showSearch}){
                         q:debouncedSearchQuery,
                         apikey:import.meta.env.VITE_GNEWS_API_KEY,
                         lang:"en",
-                        // pageSize:100,
                         page: page
                     }
                 })
@@ -92,7 +91,6 @@ export default function News({category, showSearch}){
                 <NewsItem 
                     key={index}
                     name={item.source.name}
-{/*                     author={item.author} */}
                     title={item.title}
                     description={item.description}
                     url={item.url}
